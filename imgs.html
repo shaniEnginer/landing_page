@@ -10,6 +10,7 @@
 
 *
 {
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
@@ -31,7 +32,10 @@ height: 100vh;
 background-image: url('pics/pic.jpg');
 background-repeat: no-repeat;
 background-position: center left;
+background-attachment: fixed;
+/* background-size: cover; */
 text-align: center;
+border-bottom: 6px rgb(233, 192, 13) solid;
 }
 
 
@@ -57,7 +61,7 @@ text-align: center;
     font-size: 19px;
     color:#fff;
 }
-.box input{
+.btn {
     margin-top:10px;
     text-align: center;
 padding: 10px 40px;
@@ -76,6 +80,167 @@ border-radius: 4px;
 }
 
 
+section
+{
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.thir
+{
+    
+    float: left;
+    width: 33.3%;
+    padding: 30px 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+
+
+section h1{
+
+    font-size: 45px;
+    color: rgb(233, 192, 13);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+section h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(233, 192, 13);
+}
+section p{
+    font-size: 19px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+/*  # team  */
+
+#team
+{
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+footer
+{
+    margin-top:50px;
+    background-color: rgb(233, 192, 13);
+    height: 8vh;
+    text-align: center;
+
+}
+footer p{
+    color: #fff;
+    padding-top:3vh ;
+}
+
+
+#team .m1
+{
+color: rgb(107, 124, 147);
+font-style: italic;
+font-family:    "Open Sans", Helvetica, Arial, sans-serif;
+width: 50%;
+float: left;
+}
+
+#team .m2
+{
+    font-style: italic;
+color:rgb(107, 124, 147);
+font-family:    "Open Sans", Helvetica, Arial, sans-serif;
+
+width: 50%;
+float: left;
+}
+
+#team img{
+    width: 250px;
+    border-radius: 50%;
+}
+
+#team p{
+font-size:19px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+}
+
+#team h1{
+    font-size: 40px;
+}
+
+
+#team h1:hover{
+text-decoration: underline;
+transition: all 1s;
+text-decoration-color: #333;
+cursor: pointer;
+}
+
+
+#team h3{
+    padding-top:5vh;
+}
+
+#team h3:hover
+{
+    color:rgb(233, 192, 13);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+
+/*  media Qurey */
+
+@media(max-width: 700px) {
+    .box h1
+{
+    font-size: 55px;
+       padding-top:20vh;
+
+}
+
+
+
+.box
+{
+background-image: url('pics/revised.jpg');
+background-position: 0 -700;
+/* background-size:cover ; */
+
+}
+
+section h1
+{
+    font-size: 30px;
+}
+.thir
+
+{
+    float: none;
+    width: 100%;
+}
+
+
+#team .m1 , #team .m2{
+    float: none;
+    width: 100%;
+}
+}
 
 </style>
 
@@ -93,12 +258,92 @@ border-radius: 4px;
 
 <p>Lusto inventore impedit eum eveniet reiciendis architecto quas facere modi necessitatibus? Maxime officiis quasi earum nulla obcaecati voluptatum, quos deserunt inventore possimus qui ipsum molestiae?</p>
 
-<input type="submit" name="register">
+<input class="btn" type="submit" value="register">
         </div>
 
 
 
 </div>
+
+
+<section>
+
+
+
+<div class="container">
+
+    <h1>Overwhelmed Exprience you would have ! </h1>
+   <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et sapiente eum esse, ratione ipsam minima illo magnam eius quisquam nu </p>
+
+        <div class="thir">
+            <img src="pics/choice.jpg" alt="">
+            <h2>Photography</h2>
+<hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptas vel facilis quaerat aliquam fugiat reiciendis perspiciatis, molestiae voluptatibus quasi at harum.</p>
+            <input class="btn" type="submit" value="Register" >
+        </div>
+
+        <div class="thir">
+                <img src="pics/brock2.jpg" alt="">
+       <h2>Sandy Weather </h2>
+       <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptas vel facilis quaerat aliquam fugiat reiciendis perspiciatis, molestiae voluptatibus quasi at harum.</p>
+                <input class="btn" type="submit" value="Register" >
+        </div>
+
+        <div class="thir">
+        <img src="pics/brock.jpg" alt="">
+        <h2>Lorem, ipsum </h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptas vel facilis quaerat aliquam fugiat reiciendis perspiciatis, molestiae voluptatibus quasi at harum.</p>
+    <input class="btn" type="submit" value="Register" >
+         </div>
+</section>
+
+
+<section id="team">
+<div class="container">
+
+<h1>Our Team</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum laborum temporibus, quibusdam magni quis eligendi vel molestiae corporis cum nesciunt sapiente?</p>
+
+<div class="m1">
+
+    <img src="team/photo-of-man-wearing-eyeglasses-3184611 (1).jpg" alt="">
+    <h3>Asad Ali</h3>
+    <p>Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.
+
+        </p>
+
+</div>
+
+<div class="m2">
+
+        <img src="team/adult-beard-boy-casual-220453 (1).jpg" alt="">
+        <h3>Usman Maqbool</h3>
+        <p>Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.
+
+            </p>    
+    </div>
+
+
+
+
+</div>
+</section>
+
+
+
+
+
+
+<footer>
+
+    <p>Karachi Beach Company- 1999-2002 &copy; all rights are reserved  </p>
+
+</footer>
+
+
 
 
 </body>
